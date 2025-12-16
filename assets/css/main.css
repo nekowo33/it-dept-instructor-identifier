@@ -1,21 +1,15 @@
 :root {
     /* --- COLORS & GRADIENTS --- */
     
-    /* Solid fallback for text/borders where gradients won't work */
     --uep-blue-solid: #17376E; 
     
-    /* The Main Header/Button Gradient 
-       Stops: 0% #DCDEED -> 77% #17376E 
-       Note: 'to bottom' is standard, but you can change to 'to right' if preferred 
-    */
+    /* The Main Header/Button Gradient  */
     --uep-blue-gradient: linear-gradient(to bottom, #DCDEED 0%, #17376E 77%);
     
     /* The Yellow Accent (Solid) */
     --uep-yellow: #FFD700;
     
-    /* The Page Background Gradient 
-       Stops: 0% #FFFFFF -> 86% #DCDEED
-    */
+    /* The Page Background Gradient */
     --bg-light-gradient: linear-gradient(to bottom, #FFFFFF 0%, #DCDEED 86%);
     
     /* Standard Text Colors */
@@ -32,20 +26,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif; /* Use Inter or Roboto if you have them */
+    font-family: 'Arial', sans-serif;
 }
 
 /* BODY BACKGROUND */
 body {
     background: var(--bg-light-gradient);
-    min-height: 100vh; /* Ensures gradient covers the whole screen */
-    background-attachment: fixed; /* Keeps gradient fixed while scrolling */
+    min-height: 100vh; 
+    background-attachment: fixed; 
     color: var(--text-dark);
 }
 
 /* --- REUSABLE COMPONENTS --- */
 
-/* 1. THE HEADER (Used on all pages) */
+
 .uep-header {
     position: relative;
     height: 100px;
@@ -90,10 +84,9 @@ body {
 }
 
 .header-logo img {
-    height: 80px; /* Adjust based on your logo aspect ratio */
+    height: 80px;
 }
 
-/* 2. NAVIGATION LINKS (Public View) */
 .nav-links {
     display: flex;
     gap: 25px;
@@ -110,10 +103,10 @@ body {
 }
 
 .nav-links a:hover {
-    color: #FFF; /* White on hover */
+    color: #FFF;
 }
 
-/* 3. ADMIN PROFILE TEXT (Admin View) */
+
 .admin-profile {
     color: var(--uep-yellow);
     font-weight: bold;
@@ -121,7 +114,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* 4. PRIMARY BUTTONS (Blue Gradient) */
+
 .btn-primary {
     background: var(--uep-blue-gradient);
     color: white;
@@ -132,7 +125,7 @@ body {
     border-radius: 4px;
 }
 
-/* 5. YELLOW BUTTONS (Accent) */
+
 .btn-accent {
     background-color: var(--uep-yellow);
     color: var(--uep-blue-solid);

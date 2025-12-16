@@ -435,7 +435,7 @@
     text-decoration: underline;
 }
 
-/* Responsive adjustments for About page */
+/* Responsive About & Contact Page */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 1.75rem;

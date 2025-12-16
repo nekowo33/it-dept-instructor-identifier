@@ -100,10 +100,8 @@ if (professorSearch) {
     professorSearch.addEventListener('input', function(e) {
         const query = e.target.value.trim().toLowerCase();
         
-        // Clear the grid
         professorsGrid.innerHTML = '';
         
-        // Filter and re-add matching cards
         allCards.forEach(card => {
             const name = card.querySelector('.professor-name').textContent.toLowerCase();
             if (name.includes(query) || query === '') {
@@ -111,7 +109,6 @@ if (professorSearch) {
             }
         });
         
-        // If no results, show a message
         if (professorsGrid.children.length === 0) {
             professorsGrid.innerHTML = '<div class="no-professors-found">No professors found</div>';
         }
