@@ -1,0 +1,765 @@
+/* PUBLIC PAGES STYLING */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - var(--header-height));
+    padding: 40px 20px;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-title {
+    color: var(--uep-blue-solid);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    line-height: 1.4;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.it-logo {
+    width: 280px;
+    height: auto;
+    max-width: 100%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    width: 28px;
+    height: 28px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 20px 20px 20px 70px;
+    font-size: 1.1rem;
+    border: 3px solid var(--uep-blue-solid);
+    border-radius: 50px;
+    outline: none;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-input:focus {
+    border-color: var(--uep-yellow);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+}
+
+.search-results {
+    margin-top: 30px;
+}
+
+/* Search Results Styling */
+.results-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.result-info {
+    flex: 1;
+}
+
+.result-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--uep-blue-solid);
+    margin-bottom: 5px;
+}
+
+.result-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.result-cor {
+    font-weight: 600;
+    color: var(--text-dark);
+    background: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.result-separator {
+    color: #ccc;
+}
+
+.result-title {
+    color: #666;
+}
+
+.result-arrow {
+    flex-shrink: 0;
+    color: var(--uep-blue-solid);
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 1.1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* PROFESSORS PAGE */
+.professors-container {
+    padding: 30px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.search-bar-container {
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    position: relative;
+    max-width: 300px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+
+.search-icon-small {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    background: transparent;
+}
+
+.search-bar input::placeholder {
+    color: #999;
+}
+
+.professors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.no-professors-found {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+    font-size: 1.1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.professor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+    width: 100%;
+}
+
+.professor-card:hover {
+    transform: translateY(-5px);
+}
+
+.professor-photo {
+    width: 150px;
+    height: 150px;
+    background: #bbb;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.professor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.professor-name {
+    color: var(--uep-blue-solid);
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Active nav link */
+.nav-links a.active {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .it-logo {
+        width: 200px;
+    }
+    
+    .search-input {
+        padding: 15px 15px 15px 60px;
+        font-size: 1rem;
+    }
+    
+    .search-icon {
+        left: 20px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .professors-container {
+        padding: 20px;
+    }
+
+    .professors-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 20px;
+    }
+
+    .professor-photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .professor-name {
+        font-size: 0.85rem;
+    }
+}
+
+/* ABOUT PAGE */
+.about-hero {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('../images/about-hero.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(23, 55, 110, 0.85) 0%, 
+        rgba(23, 55, 110, 0.7) 50%, 
+        rgba(220, 222, 237, 0.75) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+
+.about-content {
+    padding: 60px 40px;
+    background: var(--bg-light-gradient);
+}
+
+.about-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-text {
+    color: var(--uep-blue-solid);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.contact-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 3px solid var(--uep-blue-solid);
+}
+
+.contact-title {
+    color: var(--uep-blue-solid);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    color: var(--uep-blue-solid);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-label {
+    color: var(--uep-blue-solid);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.contact-link {
+    color: var(--uep-yellow);
+    text-decoration: none;
+    font-size: 0.95rem;
+    word-break: break-word;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--uep-blue-solid);
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for About page */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .about-content {
+        padding: 40px 20px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 25px;
+    }
+}
+
+/* PROFILE PAGE */
+.profile-container {
+    padding: 40px;
+    background: var(--bg-light-gradient);
+    min-height: calc(100vh - var(--header-height));
+}
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Left Sidebar */
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-photo-container {
+    border: 3px solid var(--uep-blue-solid);
+    padding: 15px;
+    background: white;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background: #bbb;
+}
+
+.photo-label {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-title-box {
+    border: 3px solid var(--uep-blue-solid);
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+.title-label {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.title-value {
+    color: var(--uep-blue-solid);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.notify-box {
+    border: 3px solid var(--uep-blue-solid);
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--uep-blue-solid);
+}
+
+.btn-notify {
+    width: 100%;
+    background-color: var(--uep-blue-solid);
+    color: var(--uep-yellow);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-notify:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(23, 55, 110, 0.3);
+}
+
+/* Right Main Content */
+.profile-main {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    margin-bottom: 30px;
+}
+
+.profile-name {
+    color: var(--text-dark);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.profile-dept,
+.profile-college {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 2px solid var(--uep-blue-solid);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Info Table Styling */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--uep-blue-solid);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-table thead {
+    background-color: transparent;
+}
+
+.info-table th {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 25px 20px 10px 20px;
+    border-bottom: 2px solid #eee;
+    border-right: 2px solid var(--uep-blue-solid);
+    background-color: #fff;
+    vertical-align: top;
+}
+
+.info-table th:last-child {
+    border-right: none;
+}
+
+.info-table td {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    padding: 8px 20px;
+    border-right: 2px solid var(--uep-blue-solid);
+    vertical-align: top;
+    background-color: #fff;
+    line-height: 1.8;
+}
+
+.info-table td:last-child {
+    border-right: none;
+}
+
+.info-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.info-column {
+    border-right: 2px solid var(--uep-blue-solid);
+    padding: 25px 20px;
+    min-height: 300px;
+}
+
+.info-column:last-child {
+    border-right: none;
+}
+
+.info-title {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.info-content {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.info-content p {
+    margin: 8px 0;
+}
+
+/* Responsive Profile Page */
+@media (max-width: 1024px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .profile-sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .profile-photo-container,
+    .profile-title-box,
+    .notify-box {
+        flex: 1;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-main {
+        padding: 25px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-dept,
+    .profile-college {
+        font-size: 1rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .info-table {
+        font-size: 0.85rem;
+    }
+
+    .info-table th,
+    .info-table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .info-column {
+        border-right: none;
+        border-bottom: 2px solid var(--uep-blue-solid);
+        min-height: auto;
+    }
+
+    .info-column:last-child {
+        border-bottom: none;
+    }
+
+    .profile-sidebar {
+        flex-direction: column;
+    }
+
+    .profile-photo-container,
+    .profile-title-box,
+    .notify-box {
+        min-width: 100%;
+    }
+}

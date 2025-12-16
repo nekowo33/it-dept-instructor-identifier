@@ -1,0 +1,155 @@
+Abuke, Mar Riel
+Title: Part-Time Lecturer
+Subject(s) Handled: CC104a, CC104b, CC104c
+Classes Handled (Class ID): 0011910, 0011911, 0011912
+Class Schedules: Mon 1:00 -- 4:00 TueThurs 1:00 -- 2:00; Wed 1:00 -- 4:00 TueThurs 2:00 -- 3:00; Mon 7:00 -- 10:00 TueThurs 7:00 -- 8:00
+
+Acebuche, Nikka
+Title: Part-Time Lecturer
+Subject(s) Handled: HCI102a, HCI102b, HCI102c, HCI102d, HCI102e
+Classes Handled (Class ID): 0012080, 0012081, 0012082, 0012083, 0012084
+Class Schedules: Fri 7:00 -- 10:00 MonWed 7:00 -- 8:00; Fri 7:00 -- 10:00 MonWed 7:00 -- 8:00; Fri 7:00 -- 10:00 MonWed 7:00 -- 8:00; Fri 7:00 -- 10:00 MonWed 7:00 -- 8:00; Fri 7:00 -- 10:00 MonWed 7:00 -- 8:00
+
+Alig, Kristel Jean
+Title: Part-Time Lecturer
+Subject(s) Handled: PT101a, PT101b, PT101c, PT101d, PT101e
+Classes Handled (Class ID): 0012320, 0012321, 0012322, 0012323, 0012324
+Class Schedules: Wednesday 1:00 - 4:00 TueThurs 2:00 - 3:00; Monday 1:00 - 4:00 TueThurs 1:00 - 2:00; Monday 7:00 - 10:00 TueThurs 7:00 - 8:00; Monday 7:00 - 10:00 TueThurs 7:00 - 8:00; Monday 4:00 - 7:00 TueThurs 9:00 - 10:00
+
+Benesisto, Rogelio
+Title: Regular Faculty/Instructor
+Subject(s) Handled: CC101a, CC101b, CC101c, CC101d
+Classes Handled (Class ID): 0011890, 0011891, 0011892, 0011893
+Class Schedules: MonWed 9:00 -- 10:00 TueThurs 10:30 -- 11:30; MonWed 10:00 -- 11:00 TueThurs 8:30 -- 10:00; MonWed 1:00 -- 2:00 TueThurs 2:30 -- 4:00; MonWed 2:00 -- 3:00 TueThurs 2:30 -- 4:00 
+
+Cerbito, Rhea
+Title: Student Services Coordinator
+Subject(s) Handled: SA101A, SA101B, SA101C, SA101D
+Classes Handled (Class ID): 0012330, 0012331, 0012332, 0012333
+Class Schedules: MonWed 9:00 -- 10:00 Tuesday 7:00 -- 10:00; MonWed 10:00 -- 11:00 Tuesday 1:00 -- 4:00; MonWed 1:00 -- 2:00 Thursday 1:00 -- 4:00; MonWed 2:00 -- 3:00 Thursday 7:00 -- 10:00 
+
+Chan, Celeste
+Title: ICT Director
+Subject(s) Handled: CAP102A, CAP102B
+Classes Handled (Class ID): 0011860, 0011861
+Class Schedules: MonWed 11:00 -- 12:30; TueThurs 7:00 -- 8:30 
+
+Ching, Jose
+Title: Regular Faculty/Instructor
+Subject(s) Handled: IT101a, IT101b, IT101c, IT101d, IT101e, IT101f
+Classes Handled (Class ID): 0012140, 0012141, 0012142, 0012143, 0012144, 0012145
+Class Schedules: TueThurs 8:30 -- 10:00; TueThurs 10:00 -- 11:30; TueThurs 1:00 -- 2:30; TueThurs 2:30 -- 4:00; MonWedFri 2:00 -- 3:00; MonWedFri 1:00 -- 2:00 
+
+Custorio, Jomei Andrew
+Title: Part-Time Lecturer
+Subject(s) Handled: IAS102d, IPT101a, IPT101b, IPT101c, IPT101d
+Classes Handled (Class ID): 0012103, 0012120, 0012121, 0012122, 0012123
+Class Schedules: Tuesday 10:00 - 1:00 MonWed 11:00 - 12:00; Friday 7:00 - 10:00 MonWed 2:00 - 3:00; Friday 10:00 - 11:00 MonWed 2:00 - 3:00; Monday 7:00 - 10:00 TueThurs 8:00 - 9:00; Wednesday 7:00 - 10:00 TueThurs 9:00 - 10:00
+
+Demeterio, Jomar
+Title: Part-Time Lecturer
+Subject(s) Handled: OS101a, OS101b, OS101c, OS101d, IAS102d
+Classes Handled (Class ID): 0012250, 0012251, 0012252, 0012253, 0012012
+Class Schedules: Friday 4:00 - 7:00 TueThurs 9:00 - 10:00; Thursday 7:00 - 10:00 MonWed 4:00 - 5:00; Friday 10:00 - 1:00 MonWed 9:00 - 10:00; Friday 1:00 - 4:00 MonWed 12:00 - 1:00; Monday 4:00 - 7:00 TueThurs 9:00 - 10:00
+
+Deronia, Merry Jean
+Title: Part-Time Lecturer
+Subject(s) Handled: PT101f, PT101g, GE Elect 2b, GE Elect 1a, GE Elect 1e, GE Elect 1d
+Classes Handled (Class ID): 0012325, 0012326, 0051622, 1740770, 1032824, 1032823
+Class Schedules: Monday 7:00 -- 10:00 TueThurs 9:00 -- 10:00; Wednesday 1:00 -- 4:00 TueThurs 8:00 -- 9:00; TueThurs 2:30 -- 4:00; TueThurs 1:00 -- 2:30; MonWedFri 11:00 -- 12:00; MonWedFri 10:00 -- 11:00 
+
+Echaluche, Tomas Paolo
+Title: Part-Time Lecturer
+Subject(s) Handled: WS101a, WS101b, WS101c, WS101d, IAS102b
+Classes Handled (Class ID): 0012390, 0012391, 0012392, 0012393, 0012101
+Class Schedules: Fri 10:00 -- 1:00 MonWed 3:00 -- 4:00; Fri 1:00 -- 4:00 MonWed 2:00 -- 3:00; Fri 10:00 -- 1:00 MonWed 2:00 -- 3:00; Wed 10:00 -- 1:00 TueThu 7:00 -- 8:00; Wed 4:00 -- 7:00 MonWed 8:00 -- 9:00
+
+Edralin, Ralph Michael
+Title: Part-Time Lecturer
+Subject(s) Handled: SIA101a, SIA101b, SIA101c, SIA101d
+Classes Handled (Class ID): 0012350, 0012351, 0012352, 0012353
+Class Schedules: Monday 4:00 - 7:00 TueThurs 2:00 - 3:00; Wednesday 4:00 - 7:00 TueThurs 1:00 - 2:00; Friday 7:00 - 10:00 MonWed 9:00 - 10:00; Friday 4:00 - 7:00 MonWed 9:00 - 11:00
+
+Entico, Christy
+Title: Regular Faculty/Instructor
+Subject(s) Handled: ITP102e, ITP102f, ITP102g, ITP101g, ITP101h
+Classes Handled (Class ID): 0012164, 0012165, 0012166, 0012146, 0012147
+Class Schedules: TueThurs 1:00 -- 2:00; TueThurs 10:00 -- 11:30; MonWedFri 9:00 -- 10:00; MonWedFri 7:00 -- 8:00; MonWedFri 8:00 -- 9:00 
+
+Entico, Danny Gem
+Title: Regular Faculty/Instructor
+Subject(s) Handled: Net102a, Net102b, Net102c, Net102d, IAS102c
+Classes Handled (Class ID): 0012220, 0012221, 0012222, 0012223, 0012100
+Class Schedules: TueThurs 11:30 -- 1:00 MonWed 7:00 -- 8:00; TueThurs 7:00 -- 8:30 MonWed 9:00 -- 10:00; Tuesday 4:00 -- 7:00 MonWed 2:00 -- 3:00; Thursday 4:00 -- 7:00 MonWed 1:00 -- 2:00; Monday 4:00 -- 7:00 TueThurs 9:00 -- 10:00 
+
+Resuello, Jenny
+Title: Regular Faculty/Instructor
+Subject(s) Handled: PF101a, PF101b, PF101c, PF101d, PF101e
+Classes Handled (Class ID): 0012300, 0012301, 0012302, 0012303, 0012304
+Class Schedules: MonWed 8:00 - 9:00 TueThu 7:00 - 8:30; MonWed 7:00 - 8:00 TueThu 8:30 - 10:00; MonWed 2:00 - 3:00 TueThu 1:00 - 2:30; MonWed 1:00 - 2:00 TueThu 2:30 - 4:00; MonWed 10:00 - 11:00 TueThu 10:00 - 11:30
+
+Resuello, Maximo
+Title: Regular Faculty/Instructor
+Subject(s) Handled: IT102a, IT102b, IT102c, IT102d
+Classes Handled (Class ID): 0012150, 0012151, 0012152, 0012153
+Class Schedules: MonWed 9:00 - 10:00 TueThu 8:30 - 10:00; MonWed 8:00 - 9:00 TueThu 10:00 - 11:30; MonWed 1:00 - 2:00 TueThu 1:00 - 2:30; MonWed 2:00 - 3:00 TueThu 2:30 - 4:00
+
+Santos, Emmanuel
+Title: ICT Staff
+Subject(s) Handled: CC106a, CC106b, CC106c, CC106d
+Classes Handled (Class ID): 0011930, 0011931, 0011932, 0011933
+Class Schedules: Monday 1:00 - 4:00 TueThu 10:00 - 11:00; MonWed 7:00 - 8:00 Friday 1:00 - 4:00; MonWed 8:00 - 9:00 Friday 4:00 - 7:00; Wednesday 1:00 - 4:00 TueThu 9:00 - 10:00
+
+Galing, Jonathan
+Title: Part-Time Lecturer
+Subject(s) Handled: CC102e, CC102f, CC102g, CC102h, ITS101c
+Classes Handled (Class ID): 0011894, 0011895, 0011896, 0011897, 0011898
+Class Schedules: MonWed 1:00 -- 2:00 TueThurs 10:00 -- 11:30; MonWed 2:00 -- 3:00 TueThurs 8:30 -- 10:00; MonWed 8:00 -- 9:00 TueThurs 1:00 -- 2:30; MonWed 9:00 -- 10:00 TueThurs 2:30 -- 4:00; Monday 10:00 -- 11:30 TueThurs 1:00 -- 2:00
+
+Gatongay, Riva
+Title: External Services Coordinator
+Subject(s) Handled: CAP1024c, CAP1024d, ITS101a, ITS101b
+Classes Handled (Class ID): 0011872, 0011873, 0012170, 0012171
+Class Schedules: TueThurs 7:00 -- 8:30; TueThurs 8:30 -- 10:00; TueThurs 10:00 -- 11:00 Monday 10:00 -- 1:00; TueThurs 9:00 -- 10:00 Monday 10:00 -- 1:00 
+
+Masloc, Danilo Isagani
+Title: College Department Chairman
+Subject(s) Handled: IM101a
+Classes Handled (Class ID): 0012620
+Class Schedules: TueThurs 1:00 -- 2:00 Monday 10:00 -- 1:00 
+
+Naza, Mark Niko
+Title: Part-Time Lecturer
+Subject(s) Handled: PF101f, PF101g, ITS101d, Math 112a, Math112b
+Classes Handled (Class ID): 0012305, 0012306, 0012173, 1740810, 1740811
+Class Schedules: MonWed 10:00 - 11:00 TueThurs 11:30 - 1:00; Monday 1:00 - 4:00 TueThurs 1:00 - 2:00; Wednesday 4:00 -- 7:00 TueThurs 11:00 -- 12:00; Thursday 7:00 -- 10:00 MonWed 8:00 -- 9:00; Monday 4:00 -- 7:00 MonWed 9:00 -- 10:00 
+
+Noora, Vince Carlo
+Title: Part-Time Lecturer
+Subject(s) Handled: CC104d, CC104e, CC104f, CC104g, GE Elect 1b
+Classes Handled (Class ID): 0011913, 0011914, 0011915, 0011916, 1032821
+Class Schedules: Wednesday 7:00 -- 10:00 TueThurs 8:00 -- 9:00; MonWed 12:00 -- 1:00 TueThurs 11:30 -- 1:00; Tuesday 4:00 -- 7:00 MonWed 3:00 -- 4:00; Monday 10:00 -- 1:00 TueThurs 9:00 -- 10:00; TueThurs 1:00 -- 2:30 
+
+Obieta, Antoine Jusherand
+Title: Part-Time Lecturer
+Subject(s) Handled: ES 112eA, ES 112eB, ES 112eC, ES112eD, ES112eE
+Classes Handled (Class ID): 2460050, 2460051, 2460052, 2460053, 2460054
+Class Schedules: Monday 1:00 -- 4:00 Wednesday 1:00 -- 4:00; Tuesday 1:00 -- 4:00 Thursday 1:00 -- 4:00; Tuesday 7:00 -- 10:00 Thursday 7:00 -- 10:00; MonWed 7:00 -- 10:00 
+
+Ortiz, Kacie
+Title: Part-Time Lecturer
+Subject(s) Handled: CC101f, CC101g, CC101h, Computer 1a, Computer 1b
+Classes Handled (Class ID): 0011885, 0011886, 0011887, 0591160, 0591161
+Class Schedules: Friday 4:00 - 7:00 TueThurs 10:00 - 11:00; Thursday 4:00 - 7:00 MonWed 10:00 - 11:00; Tuesday 4:00 - 7:00 MonWed 10:00 - 11:00; Wednesday 4:00 - 7:00 TueThurs 9:00 - 10:00; Monday 4:00 - 7:00 TueThurs 3:00 -4:00 
+
+Sabayo, Dinah Grace
+Title: Part-Time Lecturer
+Subject(s) Handled: CC101a, CC101b, CC101c, CC101d, CC101e
+Classes Handled (Class ID): 0011880, 0011881, 0011882, 0011883, 0011884
+Class Schedules: MonWed 7:00 - 10:00 TueThurs 11:30 - 1:00; MonWed 10:00 - 1:00 TueThurs 9:00 - 10:00; MonWed 1:00 - 4:00 TueThurs 2:00 - 3:00; MonWed 4:00 - 7:00 TueThurs 3:00 - 4:00; MonWed 7:00 - 10:00 TueThurs 12:00 - 1:00
+
+Zabala, Jerald
+Title: Part-Time Lecturer
+Subject(s) Handled: HCI102f, HCI102g, IM101c, IM101d, GE Elective 2a, GE Elective 1c
+Classes Handled (Class ID): 0012085, 0012086, 0012112, 0012113, 0051621, 1032822
+Class Schedules: Thursday 4:00 7:00 MonWed 2:00 -- 3:00; Wednesday 10:00 -- 1:00 TueThurs 2:00 -- 3:00; Wednesday 4:00 -- 7:00 TueThurs 9:00 -- 10:00; Monday 4:00 -- 7:00 TueThurs 10:00 -- 11:00; MonWedFri 9:00 -- 10:00; TueThurs 2:30 - 4:00 

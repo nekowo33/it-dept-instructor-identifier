@@ -1,0 +1,84 @@
+BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY
+College of Science
+Department of Information Technology
+
+===== 1ST YEAR =====
+
+--- 1st Semester ---
+PE1: PATHFIT 1
+Filipino 1: Retorika
+GE 1: Math in the Modern World
+GE 2: Purposive Communication
+GE 3: Understanding the Self
+IT101: Computer Bookkeeping and Accounting
+NSTP 111: CWTS/ROTC
+CC 101: Introduction to Computing
+CC 102: Computer Programming 1
+
+--- 2nd Semester ---
+PE2: PATHFIT 2
+Filipino 2: Panitikan ng Pilipinas
+GE 4: Readings in the Philippine History
+GE 6: Art Appreciation
+GE 9: Life and Works of Rizal
+MS101: Discrete Mathematics
+NSTP 121: CWTS/ROTC
+CC 103: Computer Programming 2
+CC 104: Introduction to Human Computer Interaction
+
+
+===== 2ND YEAR =====
+
+--- 1st Semester ---
+PE3: PATHFIT 3
+GE 5: Contemporary World
+ITP102: IT Professional Ethics
+MS102: Quantitative Methods
+CC 104: Data Structures and Algorithms
+HCI102: Human Computer Interaction 2
+PP 101: Object Oriented Programming
+PT 101: Platform Technologies
+
+--- 2nd Semester ---
+PE4: PATHFIT 4
+GE 7: Science, Technology and Society
+GE 8: Ethics
+CC 105: Information Management
+MMS101: Multimedia Systems
+NET 101: Networking 1
+SAD: System Analysis and Design
+
+
+===== 3RD YEAR =====
+
+--- 1st Semester ---
+GE Elec 1: Environmental Science
+IM101: Fundamental of Database
+IPT101: Integrative Programming and Technologies 1
+IT102: Mobile Application Development
+ITS101: IT Service Management
+NET102: Networking 2
+SIA101: System Integration and Architecture 1
+WS101: Web Systems and Technologies
+
+--- 2nd Semester ---
+CAP101: Capstone Project 1
+GE ELEC 2: Living in the IT Era
+SP101: Social and Professional Issues
+IAS101: Information Assurance and Security 1
+IPT102: Integrative Programming and Technologies 2
+SA102: System Integration and Architecture 2
+
+
+===== 4TH YEAR =====
+
+--- 1st Semester ---
+CAP102: Capstone Project 2
+GE ELEC 3: Entrepreneurial Mind
+CC 106: Application Development and Emerging Technologies
+IAS 102: Information Assurance and Security 2
+OS101: Operating System
+SA101: System Administration and Maintenance
+
+--- 2nd Semester ---
+PRAC101: Practicum (486 hours)
