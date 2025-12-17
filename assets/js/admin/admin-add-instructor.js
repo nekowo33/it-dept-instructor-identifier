@@ -1,16 +1,14 @@
-// Admin Add Instructor Page
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = '../login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Tab switching
+    // switching between tabs
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
@@ -18,17 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             const tabName = this.getAttribute('data-tab');
             
-            // Remove active class from all tabs and contents
             tabBtns.forEach(b => b.classList.remove('active'));
             tabContents.forEach(c => c.classList.remove('active'));
             
-            // Add active class to clicked tab and corresponding content
             this.classList.add('active');
             document.getElementById(tabName + 'Tab').classList.add('active');
         });
     });
 
-    // Photo upload
+    // photo preview functionality
     const uploadBtn = document.getElementById('uploadPhotoBtn');
     const photoInput = document.getElementById('photoInput');
     const previewImage = document.getElementById('previewImage');
@@ -51,14 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Handle form submission
     const form = document.getElementById('instructorForm');
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         const formData = new FormData(form);
         
-        // Collect class data
+        
         const classIDs = formData.getAll('classID[]').filter(val => val.trim() !== '');
         const schedules = formData.getAll('schedule[]').filter(val => val.trim() !== '');
         const rooms = formData.getAll('room[]').filter(val => val.trim() !== '');
@@ -80,20 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }))
         };
 
-        // In a real application, this would send data to a server
-        
-        // Show success message and redirect
         alert('Instructor added successfully!');
         window.location.href = '../dashboard.html';
-    });
-
-    // Add achievement button (placeholder)
-    document.querySelector('.add-achievement-btn').addEventListener('click', function() {
-        alert('Add achievement functionality - would open a modal or expand form');
-    });
-
-    // Add subject button (placeholder)
-    document.querySelector('.add-subject-btn').addEventListener('click', function() {
-        alert('Add subject functionality - would open a modal or expand form');
     });
 });

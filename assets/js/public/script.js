@@ -1,6 +1,5 @@
-// Instructor database with COR format mappings
+// instructor data
 const instructors = [
-    // Part-Time Lecturers (B.PTL format)
     { name: "Abuke, Mar Riel", corFormat: "B.PTL1", title: "Part-Time Lecturer", profile: "profiles/instructors/profile-abuke-mar-riel.html" },
     { name: "Echaluche, Tomas Paolo", corFormat: "B.PTL2", title: "Part-Time Lecturer", profile: "profiles/instructors/profile-echaluche-tomas-paolo.html" },
     { name: "Acebuche, Nikka", corFormat: "B.PTL3", title: "Part-Time Lecturer", profile: "profiles/instructors/profile-acebuche-nikka.html" },
@@ -17,7 +16,7 @@ const instructors = [
     { name: "Obieta, Antoine Jusherand", corFormat: "B.PTL14", title: "Part-Time Lecturer", profile: "profiles/instructors/profile-obieta-antoine-jusherand.html" },
     { name: "Noora, Vince Carlo", corFormat: "B.PTL16", title: "Part-Time Lecturer", profile: "profiles/instructors/profile-noora-vince-carlo.html" },
     
-    // Regular Faculty/Staff (Initial + Surname format)
+    
     { name: "Benesisto, Rogelio", corFormat: "R. BENESISTO", title: "Regular Faculty/Instructor", profile: "profiles/instructors/profile-benesisto-rogelio.html" },
     { name: "Cerbito, Rhea", corFormat: "R. CERBITO", title: "Student Services Coordinator", profile: "profiles/instructors/profile-cerbito-rhea.html" },
     { name: "Chan, Celeste", corFormat: "C. CHAN", title: "ICT Director", profile: "profiles/instructors/profile-chan-celeste.html" },
@@ -31,7 +30,7 @@ const instructors = [
     { name: "Santos, Emmanuel", corFormat: "E. SANTOS", title: "ICT Staff", profile: "profiles/instructors/profile-santos-emmanuel.html" }
 ];
 
-// Search functionality
+
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
@@ -46,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Search in both COR format and full name
+            // filter by COR or name
             const results = instructors.filter(instructor => {
                 const corMatch = instructor.corFormat.toUpperCase().includes(query);
                 const nameMatch = instructor.name.toUpperCase().includes(query);
@@ -91,7 +90,7 @@ function displayResults(results) {
     searchResults.style.display = 'block';
 }
 
-// Professor search functionality (for professors.html)
+
 const professorSearch = document.getElementById('professorSearch');
 if (professorSearch) {
     const professorsGrid = document.getElementById('professorsGrid');

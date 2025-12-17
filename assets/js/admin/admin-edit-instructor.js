@@ -1,6 +1,4 @@
-// Admin Edit Instructor Page
-
-// Complete instructors data from profiles
+// all instructor data
 const INSTRUCTORS_DATA = {
     'abuke-mar-riel': { firstName: 'Mar Riel', lastName: 'Abuke', position: 'Part-Time Lecturer', classes: [{ subject: 'CC104a', classID: '0011910', schedule: 'Mon 1:00 -- 4:00' }, { subject: '', classID: '', schedule: 'TueThurs 1:00 -- 2:00' }, { subject: 'CC104b', classID: '0011911', schedule: 'Wed 1:00 -- 4:00' }, { subject: '', classID: '', schedule: 'TueThurs 2:00 -- 3:00' }, { subject: 'CC104c', classID: '0011912', schedule: 'Mon 7:00 -- 10:00' }, { subject: '', classID: '', schedule: 'TueThurs 7:00 -- 8:00' }] },
     'acebuche-nikka': { firstName: 'Nikka', lastName: 'Acebuche', position: 'Part-Time Lecturer', classes: [{ subject: 'HCI102a', classID: '0012080', schedule: 'Fri 7:00 -- 10:00' }, { subject: '', classID: '', schedule: 'MonWed 7:00 -- 8:00' }, { subject: 'HCI102b', classID: '0012081', schedule: 'Fri 7:00 -- 10:00' }, { subject: '', classID: '', schedule: 'MonWed 7:00 -- 8:00' }, { subject: 'HCI102c', classID: '0012082', schedule: 'Fri 7:00 -- 10:00' }, { subject: '', classID: '', schedule: 'MonWed 7:00 -- 8:00' }, { subject: 'HCI102d', classID: '0012083', schedule: 'Fri 7:00 -- 10:00' }, { subject: '', classID: '', schedule: 'MonWed 7:00 -- 8:00' }, { subject: 'HCI102e', classID: '0012084', schedule: 'Fri 7:00 -- 10:00' }, { subject: '', classID: '', schedule: 'MonWed 7:00 -- 8:00' }] },
@@ -31,17 +29,15 @@ const INSTRUCTORS_DATA = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = '../login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Get instructor ID from URL parameter
+    // get instructor from URL
     const urlParams = new URLSearchParams(window.location.search);
     const instructorId = urlParams.get('id');
 
@@ -54,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Load instructor data (this would normally come from a database)
     loadInstructorData(instructorId);
 
-    // Tab switching
+    
     const tabButtons = document.querySelectorAll('.detail-tab-btn');
     const tabContents = document.querySelectorAll('.detail-tab-content');
 
@@ -94,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// add new row to classes table
 function addClassRow(subject = '', classID = '', schedule = '') {
     const tbody = document.getElementById('classesTableBody');
     const row = document.createElement('tr');

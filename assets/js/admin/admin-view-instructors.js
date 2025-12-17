@@ -1,16 +1,14 @@
-// Admin View Instructors Page
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
+    // redirect to login if not authenticated
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = '../login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Instructors data (same as in admin-dashboard.js)
     const instructorsData = [
         { id: 1, name: 'Abuke, Mar Riel', initials: 'MRA', placeholder: 'B.PTL1', email: 'abuke.m@uep.edu.ph', image: 'Abuke, Mar Riel.png' },
         { id: 2, name: 'Acebuche, Nikka', initials: 'NA', placeholder: 'B.PTL3', email: 'acebuche.n@uep.edu.ph', image: 'Acebuche, Nikka.png' },
@@ -40,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 26, name: 'Zabala, Jerald', initials: 'JZ', placeholder: 'B.PTL11', email: 'zabala.j@uep.edu.ph', image: 'Zabala, Jerald.jpg' }
     ];
 
-    // Render instructors grid
+    
     function renderInstructors(instructors) {
         const grid = document.getElementById('instructorsGrid');
         
@@ -51,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         grid.innerHTML = instructors.map(instructor => {
             const imagePath = `../../assets/images/placeholders/${instructor.image}`;
-            // Create filename: remove comma, replace spaces with hyphens, lowercase
+            
             const filename = instructor.name.toLowerCase().replace(',', '').replace(/\s+/g, '-');
             const detailPageUrl = `../instructors/instructor-${filename}.html`;
             
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }).join('');
     }
 
-    // Search functionality
+    
     const searchInput = document.getElementById('instructorSearch');
     searchInput.addEventListener('input', function(e) {
         const searchTerm = e.target.value.toLowerCase().trim();

@@ -1,16 +1,12 @@
-// Admin View Subjects Page
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = '../login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Subjects data (same as in admin-dashboard.js)
     const subjectsData = [
         { id: 1, code: 'CAP101', name: 'Capstone Project 1', yearLevel: '3rd Year' },
         { id: 2, code: 'CAP102', name: 'Capstone Project 2', yearLevel: '4th Year' },
@@ -61,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }).join('');
     }
 
-    // Search functionality
+    
     const searchInput = document.getElementById('subjectSearch');
     searchInput.addEventListener('input', function(e) {
         const searchTerm = e.target.value.toLowerCase().trim();

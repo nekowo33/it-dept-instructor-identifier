@@ -1,16 +1,12 @@
-// Admin View Class IDs Page
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = '../login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Class IDs data (same as in admin-dashboard.js)
     const classIDsData = [
         { id: 1, classID: '0011860', instructor: 'Chan, Celeste', subject: 'CAP102A', schedule: 'MonWed 11:00-12:30', room: 'TBA' },
         { id: 2, classID: '0011861', instructor: 'Chan, Celeste', subject: 'CAP102B', schedule: 'TueThu 7:00-8:30', room: 'TBA' },
@@ -63,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }).join('');
     }
 
-    // Search functionality
+    
     const searchInput = document.getElementById('classIDSearch');
     searchInput.addEventListener('input', function(e) {
         const searchTerm = e.target.value.toLowerCase().trim();

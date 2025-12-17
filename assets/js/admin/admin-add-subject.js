@@ -1,16 +1,12 @@
-// Admin Add Subject Page
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = '../login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Handle form submission
     const form = document.getElementById('addSubjectForm');
     form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -23,9 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
             category: formData.get('category')
         };
 
-        // In a real application, this would send data to a server
-        
-        // Show success message and redirect
         alert('Subject added successfully!');
         window.location.href = '../dashboard.html';
     });

@@ -1,16 +1,14 @@
-// Admin Dashboard Functionality
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
         window.location.href = 'login.html';
         return;
     }
 
-    // Set username in header
     const username = sessionStorage.getItem('adminUser') || 'Admin';
     document.getElementById('adminUsername').textContent = username;
 
-    // Data storage (in production, this would be a database)
+    // instructors list
     let instructorsData = [
         { id: 1, name: 'Abuke, Mar Riel', initials: 'MRA', placeholder: 'B.PTL1', email: 'abuke.m@uep.edu.ph' },
         { id: 2, name: 'Acebuche, Nikka', initials: 'NA', placeholder: 'B.PTL3', email: 'acebuche.n@uep.edu.ph' },
@@ -105,31 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 31, classID: '2460050', instructor: 'Obieta, Antoine Jusherand', subject: 'ES 112eA', schedule: 'Mon 1:00-4:00, Wed 1:00-4:00', room: 'TBA' }
     ];
 
-    // Modal functionality
-    const modal = document.getElementById('modal');
-    const modalClose = document.querySelector('.modal-close');
-
-    modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-
-    function openModal(content) {
-        document.getElementById('modalBody').innerHTML = content;
-        modal.classList.add('show');
-    }
-
-    function closeModal() {
-        modal.classList.remove('show');
-        document.getElementById('modalBody').innerHTML = '';
-    }
-
-    window.closeModal = closeModal;
-
-    // ==================== EXPANDABLE LISTS ====================
-    
     const viewInstructorsBtn = document.getElementById('viewInstructorsBtn');
     const viewSubjectsBtn = document.getElementById('viewSubjectsBtn');
     const viewClassIDsBtn = document.getElementById('viewClassIDsBtn');
@@ -153,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleList(listElement, buttonElement) {
         const isExpanded = listElement.classList.contains('expanded');
         
-        // Close all lists
+        // close other lists first
         document.querySelectorAll('.expandable-list').forEach(list => {
             list.classList.remove('expanded');
         });
@@ -161,14 +134,13 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.classList.remove('active');
         });
 
-        // Toggle current list
         if (!isExpanded) {
             listElement.classList.add('expanded');
             buttonElement.classList.add('active');
         }
     }
 
-    // ==================== INSTRUCTORS SECTION ====================
+    
     
     function renderInstructorsList(limit = 8) {
         const listItems = document.getElementById('instructorsListItems');
@@ -185,61 +157,11 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'pages/add-instructor.html';
     });
 
-    window.editInstructor = function(id) {
-        const instructor = instructorsData.find(i => i.id === id);
-        if (!instructor) return;
-
-        const formHtml = `
-            <h2>Edit Instructor</h2>
-            <form class="modal-form" id="instructorEditForm">
-                <div class="form-group">
-                    <label class="form-label">Full Name</label>
-                    <input type="text" name="name" class="form-input" value="${instructor.name}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Initials</label>
-                    <input type="text" name="initials" class="form-input" value="${instructor.initials}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Placeholder Name</label>
-                    <input type="text" name="placeholder" class="form-input" value="${instructor.placeholder}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Email</label>
-                    <input type="email" name="email" class="form-input" value="${instructor.email}" required>
-                </div>
-                <div class="modal-form-actions">
-                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="btn-primary">Update Instructor</button>
-                </div>
-            </form>
-        `;
-        openModal(formHtml);
-
-        document.getElementById('instructorEditForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            instructor.name = formData.get('name');
-            instructor.initials = formData.get('initials');
-            instructor.placeholder = formData.get('placeholder');
-            instructor.email = formData.get('email');
-            renderInstructorsList();
-            closeModal();
-        });
-    };
-
-    window.deleteInstructor = function(id) {
-        if (confirm('Are you sure you want to delete this instructor?')) {
-            instructorsData = instructorsData.filter(i => i.id !== id);
-            renderInstructorsList();
-        }
-    };
-
     document.getElementById('viewMoreInstructors').addEventListener('click', function() {
         window.location.href = 'pages/view-instructors.html';
     });
 
-    // ==================== SUBJECTS SECTION ====================
+    
     
     function renderSubjectsList(limit = 8) {
         const listItems = document.getElementById('subjectsListItems');
@@ -256,69 +178,18 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'pages/add-subject.html';
     });
 
-    window.editSubject = function(id) {
-        const subject = subjectsData.find(s => s.id === id);
-        if (!subject) return;
-
-        const formHtml = `
-            <h2>Edit Subject</h2>
-            <form class="modal-form" id="subjectEditForm">
-                <div class="form-group">
-                    <label class="form-label">Subject Code</label>
-                    <input type="text" name="code" class="form-input" value="${subject.code}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Subject Name</label>
-                    <input type="text" name="name" class="form-input" value="${subject.name}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Year Level</label>
-                    <select name="yearLevel" class="form-input" required>
-                        <option value="1st Year" ${subject.yearLevel === '1st Year' ? 'selected' : ''}>1st Year</option>
-                        <option value="2nd Year" ${subject.yearLevel === '2nd Year' ? 'selected' : ''}>2nd Year</option>
-                        <option value="3rd Year" ${subject.yearLevel === '3rd Year' ? 'selected' : ''}>3rd Year</option>
-                        <option value="4th Year" ${subject.yearLevel === '4th Year' ? 'selected' : ''}>4th Year</option>
-                    </select>
-                </div>
-                <div class="modal-form-actions">
-                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="btn-primary">Update Subject</button>
-                </div>
-            </form>
-        `;
-        openModal(formHtml);
-
-        document.getElementById('subjectEditForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            subject.code = formData.get('code');
-            subject.name = formData.get('name');
-            subject.yearLevel = formData.get('yearLevel');
-            renderSubjectsList();
-            closeModal();
-        });
-    };
-
-    window.deleteSubject = function(id) {
-        if (confirm('Are you sure you want to delete this subject?')) {
-            subjectsData = subjectsData.filter(s => s.id !== id);
-            renderSubjectsList();
-        }
-    };
-
     document.getElementById('viewMoreSubjects').addEventListener('click', function() {
         window.location.href = 'pages/view-subjects.html';
     });
 
-    // ==================== CLASS IDs SECTION ====================
-    
+    // class ids list
     function renderClassIDsList(limit = 8) {
         const listItems = document.getElementById('classIDsListItems');
         const displayData = classIDsData.slice(0, limit);
         
         listItems.innerHTML = displayData.map(cls => `
             <li>
-                <span>${cls.classID}</span>
+                <span>${cls.classID} - ${cls.instructor}</span>
             </li>
         `).join('');
     }
@@ -327,79 +198,19 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'pages/add-class.html';
     });
 
-    window.editClassID = function(id) {
-        const classID = classIDsData.find(c => c.id === id);
-        if (!classID) return;
-
-        const instructorOptions = instructorsData.map(i => 
-            `<option value="${i.name}" ${i.name === classID.instructor ? 'selected' : ''}>${i.name}</option>`
-        ).join('');
-        
-        const subjectOptions = subjectsData.map(s => 
-            `<option value="${s.code}" ${s.code === classID.subject ? 'selected' : ''}>${s.code} - ${s.name}</option>`
-        ).join('');
-
-        const formHtml = `
-            <h2>Edit Class ID</h2>
-            <form class="modal-form" id="classIDEditForm">
-                <div class="form-group">
-                    <label class="form-label">Class ID</label>
-                    <input type="text" name="classID" class="form-input" value="${classID.classID}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Instructor</label>
-                    <select name="instructor" class="form-input" required>
-                        ${instructorOptions}
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Subject</label>
-                    <select name="subject" class="form-input" required>
-                        ${subjectOptions}
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Schedule</label>
-                    <input type="text" name="schedule" class="form-input" value="${classID.schedule}" required>
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Room</label>
-                    <input type="text" name="room" class="form-input" value="${classID.room}" required>
-                </div>
-                <div class="modal-form-actions">
-                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
-                    <button type="submit" class="btn-primary">Update Class ID</button>
-                </div>
-            </form>
-        `;
-        openModal(formHtml);
-
-        document.getElementById('classIDEditForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            classID.classID = formData.get('classID');
-            classID.instructor = formData.get('instructor');
-            classID.subject = formData.get('subject');
-            classID.schedule = formData.get('schedule');
-            classID.room = formData.get('room');
-            renderClassIDsList();
-            closeModal();
-        });
-    };
-
-    window.deleteClassID = function(id) {
-        if (confirm('Are you sure you want to delete this class ID?')) {
-            classIDsData = classIDsData.filter(c => c.id !== id);
-            renderClassIDsList();
-        }
-    };
-
     document.getElementById('viewMoreClassIDs').addEventListener('click', function() {
         window.location.href = 'pages/view-classids.html';
     });
 
-    // Initial render
+    // render all lists on page load
     renderInstructorsList();
     renderSubjectsList();
     renderClassIDsList();
+
+    // logout
+    document.getElementById('logoutBtn').addEventListener('click', function() {
+        sessionStorage.removeItem('adminLoggedIn');
+        sessionStorage.removeItem('adminUser');
+        window.location.href = 'login.html';
+    });
 });
