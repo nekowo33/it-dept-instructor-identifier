@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Instructor - Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Header -->
+    <header class="uep-header admin-uep-header">
+        <div class="header-logo">
+            <img src="../assets/images/uep-logo.png" alt="UEP Logo">
+        </div>
+        <div class="admin-header-center">
+            <h1 class="admin-panel-title">Admin Panel</h1>
+        </div>
+        <div class="admin-header-profile">
+            <span class="profile-label">PROFILE: <span id="adminUsername">admin</span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="instructor-view-container">
+        <div class="instructor-sidebar">
+            <div class="instructor-photo-view">
+                <img id="instructorPhoto" src="../assets/images/placeholders/default.png" alt="Instructor Photo" onerror="this.src='../assets/images/placeholders/default.png'">
+            </div>
+            <div class="instructor-name-display" id="sidebarName">NAME</div>
+            <div class="instructor-cor-display" id="sidebarCOR">PLACEHOLDER NAME COR</div>
+        </div>
+
+        <div class="instructor-details-section">
+            <!-- Tab Navigation -->
+            <div class="detail-tab-navigation">
+                <button class="detail-tab-btn active" data-tab="details">Details</button>
+                <button class="detail-tab-btn" data-tab="classes">Classes</button>
+            </div>
+
+            <!-- Details Tab -->
+            <div class="detail-tab-content active" id="detailsTab">
+                <div class="edit-info-card">
+                    <div class="edit-form-grid">
+                        <div class="edit-form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="edit-form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                        <div class="edit-form-group">
+                            <label for="middleName">Middle Name:</label>
+                            <input type="text" id="middleName" name="middleName">
+                        </div>
+                        <div class="edit-form-group">
+                            <label for="college">College:</label>
+                            <input type="text" id="college" name="college" value="College of Science">
+                        </div>
+                        <div class="edit-form-group">
+                            <label for="department">Department:</label>
+                            <input type="text" id="department" name="department" value="Information Technology">
+                        </div>
+                        <div class="edit-form-group edit-form-group-empty"></div>
+                        <div class="edit-form-group">
+                            <label for="position">Position:</label>
+                            <input type="text" id="position" name="position">
+                        </div>
+                        <div class="edit-form-group edit-form-group-empty"></div>
+                        <div class="edit-form-group edit-form-group-empty"></div>
+                        <div class="edit-form-group edit-form-full">
+                            <label for="modeOfCommunication">Mode of Communication:</label>
+                            <input type="text" id="modeOfCommunication" name="modeOfCommunication">
+                        </div>
+                        <div class="edit-form-group edit-form-full">
+                            <label for="linkOfCommunication">Link of Mode of Communication:</label>
+                            <input type="text" id="linkOfCommunication" name="linkOfCommunication">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classes Tab -->
+            <div class="detail-tab-content" id="classesTab">
+                <div class="edit-classes-card">
+                    <table class="edit-classes-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Class ID</th>
+                                <th>Schedule</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="classesTableBody">
+                            <!-- Classes will be populated here -->
+                        </tbody>
+                    </table>
+                    <button class="btn-add-class-row" id="addClassRowBtn">+ Add Class Row</button>
+                </div>
+            </div>
+
+            <!-- Bottom Actions -->
+            <div class="edit-bottom-actions">
+                <button class="btn-back-edit" id="backBtn">Back</button>
+                <button class="btn-save-changes" id="saveChangesBtn">Save Changes</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/admin-edit-instructor.js"></script>
+</body>
+</html>

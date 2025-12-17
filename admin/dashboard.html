@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - UEP IT Department</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/public.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Header -->
+    <header class="uep-header admin-uep-header">
+        <div class="header-logo">
+            <img src="../assets/images/uep-logo.png" alt="UEP Logo">
+        </div>
+        <div class="admin-header-center">
+            <h1 class="admin-panel-title">Admin Panel</h1>
+        </div>
+        <div class="admin-header-profile">
+            <span class="profile-label">PROFILE: <span id="adminUsername">admin</span></span>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-grid-main">
+        <div class="dashboard-grid-container">
+            <!-- Instructors Row -->
+            <div class="dashboard-row">
+                <div class="dashboard-card-wrapper">
+                    <button class="dashboard-card view-card" id="viewInstructorsBtn">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                        </svg>
+                        <span class="card-text">View All Instructors</span>
+                    </button>
+                    
+                    <!-- Instructors List (Expandable Dropdown) -->
+                    <div class="expandable-list" id="instructorsList">
+                        <div class="list-content">
+                            <ul class="instructors-list" id="instructorsListItems">
+                                <!-- Populated by JS -->
+                            </ul>
+                            <button class="view-more-btn" id="viewMoreInstructors">View More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="dashboard-card add-card" id="addInstructorBtn">
+                    <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    <span class="card-text">Add New Instructor</span>
+                </button>
+            </div>
+
+            <!-- Subjects Row -->
+            <div class="dashboard-row">
+                <div class="dashboard-card-wrapper">
+                    <button class="dashboard-card view-card" id="viewSubjectsBtn">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                        </svg>
+                        <span class="card-text">View All Subjects</span>
+                    </button>
+                    
+                    <!-- Subjects List (Expandable Dropdown) -->
+                    <div class="expandable-list" id="subjectsList">
+                        <div class="list-content">
+                            <ul class="subjects-list" id="subjectsListItems">
+                                <!-- Populated by JS -->
+                            </ul>
+                            <button class="view-more-btn" id="viewMoreSubjects">View More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="dashboard-card add-card" id="addSubjectBtn">
+                    <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    <span class="card-text">Add New Subject</span>
+                </button>
+            </div>
+
+            <!-- Class IDs Row -->
+            <div class="dashboard-row">
+                <div class="dashboard-card-wrapper">
+                    <button class="dashboard-card view-card" id="viewClassIDsBtn">
+                        <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                        </svg>
+                        <span class="card-text">View All Class IDs</span>
+                    </button>
+                    
+                    <!-- Class IDs List (Expandable Dropdown) -->
+                    <div class="expandable-list" id="classIDsList">
+                        <div class="list-content">
+                            <ul class="classids-list" id="classIDsListItems">
+                                <!-- Populated by JS -->
+                            </ul>
+                            <button class="view-more-btn" id="viewMoreClassIDs">View More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="dashboard-card add-card" id="addClassIDBtn">
+                    <svg class="card-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    <span class="card-text">Add New Class ID</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Add/Edit Forms -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="../assets/js/admin-dashboard.js"></script>
+</body>
+</html>

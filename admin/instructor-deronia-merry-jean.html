@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deronia, Merry Jean - Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Header -->
+    <header class="uep-header admin-uep-header">
+        <div class="header-logo">
+            <img src="../assets/images/uep-logo.png" alt="UEP Logo">
+        </div>
+        <div class="admin-header-center">
+            <h1 class="admin-panel-title">Admin Panel</h1>
+        </div>
+        <div class="admin-header-profile">
+            <span class="profile-label">PROFILE: <span id="adminUsername">admin</span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="instructor-view-container">
+        <div class="instructor-sidebar">
+            <div class="instructor-photo-view">
+                <img src="../assets/images/placeholders/Deronia, Merry Jean.jpg" alt="Deronia, Merry Jean" onerror="this.src='../assets/images/placeholders/default.png'">
+            </div>
+            <div class="instructor-name-display">Deronia, Merry Jean</div>
+            <div class="instructor-cor-display">B.PTL13</div>
+            <button class="btn-change-photo">Change Photo</button>
+            <button class="btn-edit-details">Edit Details</button>
+        </div>
+
+        <div class="instructor-details-section">
+            <!-- Tab Navigation -->
+            <div class="detail-tab-navigation">
+                <button class="detail-tab-btn active" data-tab="details">Details</button>
+                <button class="detail-tab-btn" data-tab="classes">Classes</button>
+            </div>
+
+            <!-- Details Tab -->
+            <div class="detail-tab-content active" id="detailsTab">
+                <div class="detail-info-card">
+                    <div class="detail-row">
+                        <span class="detail-label">Name:</span>
+                        <span class="detail-value">Deronia, Merry Jean</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">College:</span>
+                        <span class="detail-value">College of Science</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Department:</span>
+                        <span class="detail-value">Information Technology</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Position:</span>
+                        <span class="detail-value">Part-Time Lecturer</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Preferred Mode of Communication:</span>
+                        <span class="detail-value">N/A</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classes Tab -->
+            <div class="detail-tab-content" id="classesTab">
+                <div class="detail-info-card">
+                    <h3 class="classes-title">Classes Handled</h3>
+                    <div class="classes-list">
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">0012325</span>
+                                <span class="class-subject">PT101f</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">Monday 7:00 -- 10:00</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">0012326</span>
+                                <span class="class-subject">PT101g</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">Wednesday 1:00 -- 4:00</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">0051622</span>
+                                <span class="class-subject">GE Elect 2b</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">TueThurs 2:30 -- 4:00</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">1740770</span>
+                                <span class="class-subject">GE Elect 1a</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">TueThurs 1:00 -- 2:30</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">1032824</span>
+                                <span class="class-subject">GE Elect 1e</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">MonWedFri 11:00 -- 12:00</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">1032823</span>
+                                <span class="class-subject">GE Elect 1d</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">MonWedFri 10:00 -- 11:00</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="detail-bottom-actions">
+                <button class="btn-back-detail" onclick="window.location.href='view-instructors.html'">Back</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/admin-view-instructor-detail.js"></script>
+</body>
+</html>

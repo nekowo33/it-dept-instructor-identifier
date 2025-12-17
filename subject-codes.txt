@@ -24,7 +24,7 @@ GE 9: Life and Works of Rizal
 MS101: Discrete Mathematics
 NSTP 121: CWTS/ROTC
 CC 103: Computer Programming 2
-CC 104: Introduction to Human Computer Interaction
+HCI101: Introduction to Human Computer Interaction
 
 
 ===== 2ND YEAR =====

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - UEP IT Department</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <div class="admin-login-container">
+        <!-- Left Side - Logos -->
+        <div class="admin-logos">
+            <div class="logo-item">
+                <img src="../assets/images/uep-logo.png" alt="UEP Logo" class="admin-logo">
+            </div>
+            <div class="logo-item">
+                <img src="../assets/images/it-society-logo.png" alt="IT Society Logo" class="admin-logo">
+            </div>
+        </div>
+
+        <!-- Right Side - Login Form -->
+        <div class="login-form-container">
+            <div class="login-form-box">
+                <h2 class="login-subtitle">UEP IT Department Instructor Identifier</h2>
+                <h1 class="login-title">ADMIN LOGIN</h1>
+                
+                <form id="adminLoginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="username" class="form-label">Username:</label>
+                        <input type="text" id="username" name="username" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" id="password" name="password" class="form-input" required>
+                    </div>
+
+                    <div class="error-message" id="errorMessage"></div>
+
+                    <button type="submit" class="login-button">LOGIN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/admin-login.js"></script>
+</body>
+</html>
