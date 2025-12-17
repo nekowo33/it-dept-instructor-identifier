@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('addInstructorBtn').addEventListener('click', function() {
-        window.location.href = 'add-instructor.html';
+        window.location.href = 'pages/add-instructor.html';
     });
 
     window.editInstructor = function(id) {
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     document.getElementById('viewMoreInstructors').addEventListener('click', function() {
-        window.location.href = 'view-instructors.html';
+        window.location.href = 'pages/view-instructors.html';
     });
 
     // ==================== SUBJECTS SECTION ====================
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('addSubjectBtn').addEventListener('click', function() {
-        window.location.href = 'add-subject.html';
+        window.location.href = 'pages/add-subject.html';
     });
 
     window.editSubject = function(id) {
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     document.getElementById('viewMoreSubjects').addEventListener('click', function() {
-        window.location.href = 'view-subjects.html';
+        window.location.href = 'pages/view-subjects.html';
     });
 
     // ==================== CLASS IDs SECTION ====================
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('addClassIDBtn').addEventListener('click', function() {
-        window.location.href = 'add-class.html';
+        window.location.href = 'pages/add-class.html';
     });
 
     window.editClassID = function(id) {
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     document.getElementById('viewMoreClassIDs').addEventListener('click', function() {
-        window.location.href = 'view-classids.html';
+        window.location.href = 'pages/view-classids.html';
     });
 
     // Initial render

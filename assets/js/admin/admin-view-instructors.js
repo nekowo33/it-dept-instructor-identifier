@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
-        window.location.href = 'login.html';
+        window.location.href = '../login.html';
         return;
     }
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         grid.innerHTML = instructors.map(instructor => {
-            const imagePath = `../assets/images/placeholders/${instructor.image}`;
+            const imagePath = `../../assets/images/placeholders/${instructor.image}`;
             // Create filename: remove comma, replace spaces with hyphens, lowercase
             const filename = instructor.name.toLowerCase().replace(',', '').replace(/\s+/g, '-');
             const detailPageUrl = `../instructors/instructor-${filename}.html`;

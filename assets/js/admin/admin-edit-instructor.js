@@ -33,7 +33,7 @@ const INSTRUCTORS_DATA = {
 document.addEventListener('DOMContentLoaded', function() {
     // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
-        window.location.href = 'login.html';
+        window.location.href = '../login.html';
         return;
     }
 
@@ -157,7 +157,7 @@ function loadInstructorData(instructorId) {
     const displayData = instructorsDisplayData[instructorId] || { image: 'default.png', corFormat: 'N/A' };
 
     // Populate sidebar
-    document.getElementById('instructorPhoto').src = `../assets/images/placeholders/${displayData.image}`;
+    document.getElementById('instructorPhoto').src = `../../assets/images/placeholders/${displayData.image}`;
     document.getElementById('sidebarName').textContent = `${instructor.lastName}, ${instructor.firstName}`;
     document.getElementById('sidebarCOR').textContent = displayData.corFormat;
 

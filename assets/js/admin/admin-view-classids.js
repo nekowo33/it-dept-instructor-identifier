@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
-        window.location.href = 'login.html';
+        window.location.href = '../login.html';
         return;
     }
 

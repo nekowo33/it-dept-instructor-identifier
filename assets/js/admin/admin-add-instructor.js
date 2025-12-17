@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Check authentication
     if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
-        window.location.href = 'login.html';
+        window.location.href = '../login.html';
         return;
     }
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Show success message and redirect
         alert('Instructor added successfully!');
-        window.location.href = 'dashboard.html';
+        window.location.href = '../dashboard.html';
     });
 
     // Add achievement button (placeholder)
