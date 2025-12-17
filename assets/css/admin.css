@@ -177,10 +177,6 @@
    DASHBOARD STYLES
    ============================================ */
 
-.admin-uep-header {
-    /* Uses the base .uep-header background from main.css */
-}
-
 .admin-uep-header > * {
     position: relative;
     z-index: 1;

@@ -31,7 +31,45 @@ const instructors = [
 ];
 
 
+// notification modal functions
+function showNotifyModal() {
+    const modal = document.getElementById('notifyModal');
+    if (modal) {
+        modal.classList.add('active');
+    }
+}
+
+function closeNotifyModal() {
+    const modal = document.getElementById('notifyModal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // handle notify button clicks on profile pages
+    const notifyBtn = document.querySelector('.btn-notify');
+    if (notifyBtn) {
+        notifyBtn.addEventListener('click', function() {
+            const classId = document.getElementById('classId');
+            const lastName = document.getElementById('lastName');
+            
+            if (classId && lastName) {
+                const classIdValue = classId.value.trim();
+                const lastNameValue = lastName.value.trim();
+                
+                if (classIdValue && lastNameValue) {
+                    showNotifyModal();
+                    // clear inputs
+                    classId.value = '';
+                    lastName.value = '';
+                } else {
+                    alert('Please fill in both Class ID and Last Name');
+                }
+            }
+        });
+    }
+
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     
