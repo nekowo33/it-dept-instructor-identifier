@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Instructor - Admin Panel</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Header -->
+    <header class="uep-header admin-uep-header">
+        <div class="header-logo">
+            <img src="../../assets/images/uep-logo.png" alt="UEP Logo">
+        </div>
+        <div class="admin-header-center">
+            <h1 class="admin-panel-title">Admin Panel</h1>
+        </div>
+        <div class="admin-header-profile">
+            <span class="profile-label">PROFILE: <span id="adminUsername">admin</span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="instructor-form-container">
+        <h2 class="instructor-form-title">Add New Instructor</h2>
+
+        <div class="instructor-form-layout">
+            <!-- Photo Upload Section -->
+            <div class="photo-upload-section">
+                <div class="photo-preview" id="photoPreview">
+                    <img id="previewImage" src="" alt="Instructor Photo" style="display: none;">
+                </div>
+                <button class="upload-photo-btn" id="uploadPhotoBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    Upload Photo
+                </button>
+                <input type="file" id="photoInput" accept="image/*" style="display: none;">
+            </div>
+
+            <!-- Form Tabs -->
+            <div class="form-tabs-section">
+                <!-- Tab Navigation -->
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="details">Details</button>
+                    <button class="tab-btn" data-tab="classes">Classes</button>
+                </div>
+
+                <!-- Tab Content -->
+                <form id="instructorForm">
+                    <!-- Details Tab -->
+                    <div class="tab-content active" id="detailsTab">
+                        <div class="info-card">
+                            <h3 class="info-card-title">Basic Information</h3>
+                            
+                            <div class="form-grid-3">
+                                <div class="form-field">
+                                    <label>Last Name:</label>
+                                    <input type="text" name="lastName" required>
+                                </div>
+                                <div class="form-field">
+                                    <label>First Name:</label>
+                                    <input type="text" name="firstName" required>
+                                </div>
+                                <div class="form-field">
+                                    <label>Middle Name:</label>
+                                    <input type="text" name="middleName">
+                                </div>
+                            </div>
+
+                            <div class="form-grid-3">
+                                <div class="form-field">
+                                    <label>Department:</label>
+                                    <input type="text" name="department" required>
+                                </div>
+                                <div class="form-field">
+                                    <label>College:</label>
+                                    <input type="text" name="college" required>
+                                </div>
+                                <div class="form-field">
+                                    <label>Position:</label>
+                                    <input type="text" name="position" required>
+                                </div>
+                            </div>
+
+                            <div class="form-grid-3">
+                                <div class="form-field">
+                                    <label>Profession Background:</label>
+                                    <input type="text" name="profession">
+                                </div>
+                                <div class="form-field">
+                                    <label>Subject/s assigned:</label>
+                                    <input type="text" name="subjects">
+                                </div>
+                                <div class="form-field">
+                                    <label>Mode of Communication:</label>
+                                    <input type="text" name="communication">
+                                </div>
+                            </div>
+
+                            <div class="form-actions-inline">
+                                <button type="button" class="add-achievement-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                                    </svg>
+                                    Add achievement
+                                </button>
+                                <button type="button" class="add-subject-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                                    </svg>
+                                    Add a subject
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Classes Tab -->
+                    <div class="tab-content" id="classesTab">
+                        <div class="info-card">
+                            <h3 class="info-card-title">Classes Handled</h3>
+                            
+                            <div class="classes-grid-layout">
+                                <div class="classes-column">
+                                    <div class="class-column-header">Class IDs:</div>
+                                    <div class="class-column-hint">Insert assigned Class ID</div>
+                                    <input type="text" name="classID[]" class="class-input">
+                                    <input type="text" name="classID[]" class="class-input">
+                                    <input type="text" name="classID[]" class="class-input">
+                                    <input type="text" name="classID[]" class="class-input">
+                                    <input type="text" name="classID[]" class="class-input">
+                                    <input type="text" name="classID[]" class="class-input">
+                                </div>
+
+                                <div class="arrow-column">
+                                    <svg class="arrow-long" viewBox="0 0 100 24" fill="none">
+                                        <path d="M0 12H95M95 12L85 2M95 12L85 22" stroke="#ffd700" stroke-width="3"/>
+                                    </svg>
+                                    <svg class="arrow-long" viewBox="0 0 100 24" fill="none">
+                                        <path d="M0 12H95M95 12L85 2M95 12L85 22" stroke="#ffd700" stroke-width="3"/>
+                                    </svg>
+                                    <svg class="arrow-long" viewBox="0 0 100 24" fill="none">
+                                        <path d="M0 12H95M95 12L85 2M95 12L85 22" stroke="#ffd700" stroke-width="3"/>
+                                    </svg>
+                                    <svg class="arrow-long" viewBox="0 0 100 24" fill="none">
+                                        <path d="M0 12H95M95 12L85 2M95 12L85 22" stroke="#ffd700" stroke-width="3"/>
+                                    </svg>
+                                    <svg class="arrow-long" viewBox="0 0 100 24" fill="none">
+                                        <path d="M0 12H95M95 12L85 2M95 12L85 22" stroke="#ffd700" stroke-width="3"/>
+                                    </svg>
+                                    <svg class="arrow-long" viewBox="0 0 100 24" fill="none">
+                                        <path d="M0 12H95M95 12L85 2M95 12L85 22" stroke="#ffd700" stroke-width="3"/>
+                                    </svg>
+                                </div>
+
+                                <div class="classes-column">
+                                    <div class="class-column-header">Schedules:</div>
+                                    <div class="class-column-hint">Insert allotted time</div>
+                                    <input type="text" name="schedule[]" class="class-input">
+                                    <input type="text" name="schedule[]" class="class-input">
+                                    <input type="text" name="schedule[]" class="class-input">
+                                    <input type="text" name="schedule[]" class="class-input">
+                                    <input type="text" name="schedule[]" class="class-input">
+                                    <input type="text" name="schedule[]" class="class-input">
+                                </div>
+
+                                <div class="classes-column">
+                                    <div class="class-column-header">Rooms:</div>
+                                    <div class="class-column-hint">Insert room assigned (if applicable)</div>
+                                    <input type="text" name="room[]" class="class-input">
+                                    <input type="text" name="room[]" class="class-input">
+                                    <input type="text" name="room[]" class="class-input">
+                                    <input type="text" name="room[]" class="class-input">
+                                    <input type="text" name="room[]" class="class-input">
+                                    <input type="text" name="room[]" class="class-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-bottom-actions">
+                        <button type="button" class="btn-back" onclick="window.location.href='dashboard.html'">Back</button>
+                        <button type="submit" class="btn-save">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/admin-add-instructor.js"></script>
+</body>
+</html>

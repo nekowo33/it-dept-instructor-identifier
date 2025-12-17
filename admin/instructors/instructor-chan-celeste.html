@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan, Celeste - Admin Panel</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Header -->
+    <header class="uep-header admin-uep-header">
+        <div class="header-logo">
+            <img src="../../assets/images/uep-logo.png" alt="UEP Logo">
+        </div>
+        <div class="admin-header-center">
+            <h1 class="admin-panel-title">Admin Panel</h1>
+        </div>
+        <div class="admin-header-profile">
+            <span class="profile-label">PROFILE: <span id="adminUsername">admin</span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="instructor-view-container">
+        <div class="instructor-sidebar">
+            <div class="instructor-photo-view">
+                <img src="../../assets/images/placeholders/Chan, Celeste.jpg" alt="Chan, Celeste" onerror="this.src='../assets/images/placeholders/default.png'">
+            </div>
+            <div class="instructor-name-display">Chan, Celeste</div>
+            <div class="instructor-cor-display">C. CHAN</div>
+            <button class="btn-change-photo">Change Photo</button>
+            <button class="btn-edit-details">Edit Details</button>
+        </div>
+
+        <div class="instructor-details-section">
+            <!-- Tab Navigation -->
+            <div class="detail-tab-navigation">
+                <button class="detail-tab-btn active" data-tab="details">Details</button>
+                <button class="detail-tab-btn" data-tab="classes">Classes</button>
+            </div>
+
+            <!-- Details Tab -->
+            <div class="detail-tab-content active" id="detailsTab">
+                <div class="detail-info-card">
+                    <div class="detail-row">
+                        <span class="detail-label">Name:</span>
+                        <span class="detail-value">Chan, Celeste</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">College:</span>
+                        <span class="detail-value">College of Science</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Department:</span>
+                        <span class="detail-value">Information Technology</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Position:</span>
+                        <span class="detail-value">ICT Director</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Preferred Mode of Communication:</span>
+                        <span class="detail-value">N/A</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classes Tab -->
+            <div class="detail-tab-content" id="classesTab">
+                <div class="detail-info-card">
+                    <h3 class="classes-title">Classes Handled</h3>
+                    <div class="classes-list">
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">0011860</span>
+                                <span class="class-subject">CAP102A</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">MonWed 11:00 -- 12:30</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-item-header">
+                                <span class="class-id">0011861</span>
+                                <span class="class-subject">CAP102B</span>
+                            </div>
+                            <div class="class-item-details">
+                                <span class="class-schedule">TueThurs 7:00 -- 8:30</span>
+                                <span class="class-room">TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="detail-bottom-actions">
+                <button class="btn-back-detail" onclick="window.location.href='view-instructors.html'">Back</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../assets/js/admin-view-instructor-detail.js"></script>
+</body>
+</html>

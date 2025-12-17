@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Subject - Admin Panel</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Header -->
+    <header class="uep-header admin-uep-header">
+        <div class="header-logo">
+            <img src="../../assets/images/uep-logo.png" alt="UEP Logo">
+        </div>
+        <div class="admin-header-center">
+            <h1 class="admin-panel-title">Admin Panel</h1>
+        </div>
+        <div class="admin-header-profile">
+            <span class="profile-label">PROFILE: <span id="adminUsername">admin</span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="admin-form-container">
+        <button class="back-btn-form" onclick="window.location.href='dashboard.html'">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back
+        </button>
+
+        <div class="form-card">
+            <h2 class="form-title">New Subject</h2>
+            
+            <form id="addSubjectForm" class="admin-form">
+                <div class="form-row">
+                    <label class="form-label-gold">Subject Code:</label>
+                    <input type="text" name="code" class="form-input-white" required>
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label-gold">Subject Name/Title:</label>
+                    <input type="text" name="name" class="form-input-white" required>
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label-gold">Units/Credit Hours:</label>
+                    <input type="text" name="units" class="form-input-white" required>
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label-gold">Subject Type/Category:</label>
+                    <input type="text" name="category" class="form-input-white" required>
+                </div>
+
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../../assets/js/admin-add-subject.js"></script>
+</body>
+</html>
